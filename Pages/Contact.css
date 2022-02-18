@@ -1,0 +1,122 @@
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: "Merriweather";
+    src: url(../Medias/Font/Merriweather-LightItalic.otf);
+}
+
+@font-face
+{
+    font-family: "Ubuntu";
+    src: url(../Medias/Font/Ubuntu-R.ttf);
+}
+
+h1,h2
+{
+    font-family: Merriweather,sans-serif;
+}
+
+p
+{
+    font-family: Ubuntu,sans-serif;
+    font-size: 18px;
+}
+
+/*Top bar*/
+.topbar
+{
+    height: 335px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    font-family: Ubuntu,sans-serif;
+    font-size: 20px;
+    grid-area: topbar;
+    row-gap: 0px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo
+{
+    margin: auto;
+    width: 67px;
+    height: 67px;
+}
+
+.topbar a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.topbar a:hover
+{
+    border-left: 5px solid green;
+}
+
+.logo a:hover
+{
+    border: none;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.Informations
+{
+    text-align: center;
+}
+
+table
+{
+    margin: auto;
+    border-collapse: collapse;
+    font-family: Ubuntu,sans-serif;
+    align-self: center;
+    text-align: left;
+}
+
+.maquettes
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.maquettes img
+{
+    width: 80%;
+    border: 2px solid black;
+}
+
+.vide
+{
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 750px)
+{
+    .topbar
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: none;
+        height: auto;
+        font-family: Ubuntu,sans-serif;
+        font-size: 20px;
+        grid-area: topbar;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        font-size: 20px;
+    }
+}
